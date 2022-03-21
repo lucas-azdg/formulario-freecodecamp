@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  
+  <head>
+    <link rel="stylesheet" href="formFCC.css">
+    
+  </head>
+
+  <body>
+    <h1 id="title">Formulario de suscripción</h1>
+    <p id="description">
+      Suscribite y formá parte de nuestra comunidad.
+    </p>
+    <form id="survey-form">
+      <label id="name-label">Nombre:</label>
+      <input type="text" name="name" id="name" required placeholder="Solo tu nombre"><br>
+
+      <label id="email-label">Email:</label>
+      <input type="email" name="email" id="email" required placeholder="Email de confianza"><br>
+
+      <label id="number-label">Edad:</label>
+      <input type="number" name="number" id="number" min="18" max="100" required placeholder="Tu edad"><br>
+
+
+      <label id="guitar-type-label">Tu guitarra favorita:</label>
+      <select id="dropdown" name="guitars">
+        <option value="fender">Fender</option>
+        <option value="martin">Martin</option>
+        <option value="epiphone">Epiphone</option>
+        <option value="other">Other</option>
+      </select><br>
+
+      <label id="additional-comments-label">Contanos un poco mas de vos:</label>
+      <textarea placeholder="Comentarios adicionales"></textarea><br>
+      
+
+      <div id="button-area">
+      <label id="gender-label">Genero:</label>
+
+        <label class="radio-container">Masculino
+        <input type="radio" class= "radio-inline" name="gender" value= "masculino" checked="checked">
+        <span class="radiobtn"></span>
+        </label>
+
+        
+        <label class="radio-container">Femenino
+        <input type="radio" class= "radio-inline" name="gender" value= "femenino" checked="checked">
+        <span class="radiobtn"></span>
+        </label>
+
+
+        <label class="radio-container">Otro
+        <input type="radio" class= "radio-inline" name="gender" value= "otro" checked="checked">
+        <span class="radiobtn"></span>
+        </label>
+
+      </div>
+
+
+      <div id="button-area">
+        <label id="transportation-type-label">Tu tipo de transporte:</label>
+
+        <label class="container">Ando en bici
+        <input type="checkbox" value= "bike" checked="checked">
+        <span class="checkmark"></span>
+        </label>
+
+        
+        <label class="container">Tengo auto
+        <input type="checkbox" value= "car">
+        <span class="checkmark"></span>
+        </label>
+
+        <label class="container">Bondilover
+        <input type="checkbox" value= "boat">
+        <span class="checkmark"></span>
+        </label>
+      </div>
+
+      <input type="submit" id="submit">
+    </form>
+   
+  </body>
+</html>
